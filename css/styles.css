@@ -1,16 +1,24 @@
-#answerDisplay {
-  display: block;
-  display: list-item;
+h1 {
+  text-align: center;
+}
+
+h3, p, label  {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px green;
+}
+
+li {
+  color: white;
+  text-shadow: 2px 2px green;
 }
 
 .container {
   background-color:blue;
 }
 
-h3, p, ol, label, li  {
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px green;
+#answerDisplay {
+  display: block;
 }
 
 #list {
@@ -19,5 +27,10 @@ h3, p, ol, label, li  {
 }
 
 #btn {
+  text-align: center;
+  border-color: yellow;
+}
+
+#labelStyle, #userInput {
   text-align: center;
 }

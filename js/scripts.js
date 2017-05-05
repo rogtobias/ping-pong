@@ -11,7 +11,7 @@ $(document).ready(function() {
       var userOutput = playPingPong(userInput);
     }
       //send the output back to the html & user
-    $("#list").prepend(userOutput);
+    $("#list").text(userOutput);
   });
 });
 
