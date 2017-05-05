@@ -24,16 +24,16 @@ playPingPong = function(userInput) {
     //loop through to the number that the user inputted
   for (var i = 1; i <= userInput; i++) {
     //if number is divisible by 3 no remainder
-    if (i % 3 === 0) {
-      output.push("ping");
+    if (i % 15 === 0) {
+      output.push("ping pong");
     }
       //if number is divisible by 5 no remainder
     else if (i % 5 === 0) {
       output.push("pong");
     }
       //if number is divisible by both 3 & 5 no remainder
-    else if (i % 15 === 0) {
-      output.push("ping pong");
+    else if (i % 3 === 0) {
+      output.push("ping");
     }
       //else push the number to output
     else {
