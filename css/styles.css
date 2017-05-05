@@ -17,6 +17,17 @@ li {
   background-color:blue;
 }
 
+.jumbotron {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+#pictureStyle {
+  width: 150px;
+  float: right;
+
+}
+
 #answerDisplay {
   display: block;
 }
