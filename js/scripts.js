@@ -11,14 +11,14 @@ $(document).ready(function() {
       var userOutput = playPingPong(userInput);
     }
       //send the output back to the html & user
-    $("#list").text(userOutput);
+    $("#list").prepend(userOutput);
   });
 });
 
 //--------------------------BACKEND LOGIC
 //create function for game start
 playPingPong = function(userInput) {
-  debugger;
+  //debugger;
     //create empty array for list of numbers and words
   var output = [];
     //loop through to the number that the user inputted
