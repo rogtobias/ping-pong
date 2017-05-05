@@ -11,7 +11,7 @@ $(document).ready(function() {
       var userOutput = playPingPong(userInput);
     }
       //send the output back to the html & user
-    $("#userOutput").text(userOutput);
+    $("#list").text(userOutput);
   });
 });
 
@@ -23,7 +23,7 @@ playPingPong = function(userInput) {
   var output = [];
     //loop through to the number that the user inputted
   for (var i = 1; i <= userInput; i++) {
-    //if number is divisible by 3 no remainder
+    //if number is divisible by 3 & 5 no remainder
     if (i % 15 === 0) {
       output.push("ping pong");
     }
@@ -31,7 +31,7 @@ playPingPong = function(userInput) {
     else if (i % 5 === 0) {
       output.push("pong");
     }
-      //if number is divisible by both 3 & 5 no remainder
+      //if number is divisible by both 3 no remainder
     else if (i % 3 === 0) {
       output.push("ping");
     }
@@ -42,5 +42,5 @@ playPingPong = function(userInput) {
 
   };
   //return the result back to the frontend
-  return output.join(" ");
+  return output.join(", ");
 };
